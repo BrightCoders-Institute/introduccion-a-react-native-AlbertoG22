@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-native": "0.71.8"
+    "react-native": "0.71.8",
+    "react-native-uuid": "^2.0.1",
+    "util": "^0.12.5",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
