@@ -1,8 +1,9 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable react-native/no-inline-styles */
 import React, { useState } from 'react';
-import { Text, View, StyleSheet, FlatList } from 'react-native';
+import { View, StyleSheet, FlatList } from 'react-native';
 import { Header } from './components/Header';
+import { ListItem } from './components/ListItem';
 // import {uuid} from 'uuidv4';
 
 export const App = () => {
@@ -19,7 +20,7 @@ export const App = () => {
       <Header />
       <FlatList
         data={items}
-        renderItem={ ({item}) => <Text>{item.text}</Text>}
+        renderItem={ ({item}) => <ListItem item={item} />}
       />
     </View>
   );
